@@ -1,5 +1,12 @@
 package main
 
+import (
+	"log"
+	"github.com/pkg/errors"
+)
+
 func main(){
-	log.Println("version 1.0!")
+	base := errors.New("base error")
+	err := errors.Wrap(base, "wrapper error")
+	log.Println(err)
 }
