@@ -1,5 +1,5 @@
 package main
 
 func main(){
-	log.Println("hello!")
+	log.Println("version 1.0!")
 }
